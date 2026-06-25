@@ -108,6 +108,8 @@ Every enterprise identity strategy starts with a directory of record. Most organ
 
 **ADUC Overview — All OUs**
 ![ADUC Overview](screenshots/phase1-aduc-overview.png)
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 8 57 31 PM" src="https://github.com/user-attachments/assets/56aac5e8-b60b-4ec2-b41e-b89644c72e43" />
+
 
 ### Bulk User Creation Script
 
@@ -139,18 +141,27 @@ foreach ($User in $Users) {
 
 **SB-RetailBanking Users**
 ![RetailBanking](screenshots/phase1-retailbanking.png)
+<img width="837" height="274" alt="Screenshot 2026-06-23 at 9 15 00 PM" src="https://github.com/user-attachments/assets/2afaf843-a4b0-4630-af1f-289d5570ee56" />
+
 
 **SB-Compliance Users**
 ![Compliance](screenshots/phase1-compliance.png)
+<img width="839" height="270" alt="Screenshot 2026-06-23 at 8 58 11 PM" src="https://github.com/user-attachments/assets/db8a6250-0a4b-4687-8c47-7ff2db37d2f4" />
 
 **SB-ITSecurity Users**
 ![ITSecurity](screenshots/phase1-itsecurity.png)
+<img width="837" height="274" alt="Screenshot 2026-06-23 at 8 58 42 PM" src="https://github.com/user-attachments/assets/73caa39c-a871-4d6a-9a05-08d7f46bf5fc" />
+
 
 **SB-LoanOfficers Users**
 ![LoanOfficers](screenshots/phase1-loanofficers.png)
+<img width="837" height="274" alt="Screenshot 2026-06-23 at 8 58 50 PM" src="https://github.com/user-attachments/assets/95535b2e-4637-4f34-b832-36d981fcabe4" />
+
 
 **SB-Executive Users**
 ![Executive](screenshots/phase1-executive.png)
+<img width="837" height="274" alt="Screenshot 2026-06-23 at 8 58 36 PM" src="https://github.com/user-attachments/assets/dff854fb-d42c-42d7-9991-f4252fcc0675" />
+
 
 <br>
 
@@ -173,9 +184,13 @@ Most companies are not 100% cloud or 100% on-prem, they are both. Employees need
 
 **Entra Connect Sync Service Running**
 ![Sync Service](screenshots/phase2-sync-service.png)
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 9 22 29 PM" src="https://github.com/user-attachments/assets/ad46fd46-6ff4-4e7b-92c3-2ef73fc18278" />
+
 
 **Entra ID Users with On-Premises Sync = Yes**
 ![Synced Users](screenshots/phase2-synced-users.png)
+<img width="1137" height="758" alt="Screenshot 2026-06-23 at 9 25 06 PM" src="https://github.com/user-attachments/assets/93e19f97-63d2-4537-970a-d189d3dad116" />
+
 
 ### How It Works
 
@@ -251,6 +266,8 @@ foreach ($User in $Users) {
 
 **PowerShell Bulk Creation Output**
 ![Joiner Output](screenshots/phase3-joiner-output.png)
+<img width="1140" height="692" alt="Screenshot 2026-06-23 at 9 17 49 PM" src="https://github.com/user-attachments/assets/478c2033-ea75-4e8b-bc14-1923d38804c2" />
+
 
 **After:** All 15 users exist in the correct OUs in AD and synced to Entra ID within minutes (see Phase 1 and Phase 2 screenshots above for the resulting accounts).
 
@@ -273,6 +290,7 @@ James Carter gets promoted from Bank Teller in Retail Banking to Junior Loan Off
 
 **James Carter Before Mover (RetailBanking)**
 ![Before Mover](screenshots/phase3-mover-before.png)
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 9 25 56 PM" src="https://github.com/user-attachments/assets/41ae0e82-daf3-4d59-a923-ede451e3d9d5" />
 
 **The PowerShell script used:**
 
@@ -290,6 +308,8 @@ Start-ADSyncSyncCycle -PolicyType Delta
 
 **PowerShell Mover Output**
 ![Mover Output](screenshots/phase3-mover-output.png)
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 9 27 07 PM" src="https://github.com/user-attachments/assets/c5759bee-0b14-4748-8faf-48123185818f" />
+
 
 **After the change:**
 
@@ -301,6 +321,10 @@ Start-ADSyncSyncCycle -PolicyType Delta
 
 **James Carter After Mover (Entra ID, Junior Loan Officer)**
 ![After Mover](screenshots/phase3-mover-after.png)
+<img width="1123" height="404" alt="Screenshot 2026-06-23 at 9 30 00 PM" src="https://github.com/user-attachments/assets/0de8af0c-3140-4f87-a021-9cf71dacef43" />
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 9 27 33 PM" src="https://github.com/user-attachments/assets/7befbbeb-5b7b-4af8-9b5b-91d3e68d827b" />
+
+
 
 **What this proves to an employer:** I understand that access changes need to happen in AD first and sync to the cloud, and I can script a role change so that OU, title, and department all update consistently instead of relying on manual edits that drift out of sync.
 
@@ -335,6 +359,8 @@ Start-ADSyncSyncCycle -PolicyType Delta
 
 **PowerShell Leaver Output**
 ![Leaver Output](screenshots/phase3-leaver-output.png)
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 9 32 19 PM" src="https://github.com/user-attachments/assets/927fb47b-3b4e-4d98-9000-7fa612d10981" />
+
 
 **After the change:**
 
@@ -346,9 +372,13 @@ Start-ADSyncSyncCycle -PolicyType Delta
 
 **James Carter Disabled in Entra ID**
 ![Leaver Entra](screenshots/phase3-leaver-entra.png)
+<img width="1059" height="719" alt="Screenshot 2026-06-23 at 9 44 47 PM" src="https://github.com/user-attachments/assets/60d59a56-b758-4dd6-b9c5-2245e4cc485d" />
+
 
 **Disabled Users OU in ADUC**
 ![Disabled OU](screenshots/phase3-disabled-ou.png)
+<img width="1440" height="900" alt="Screenshot 2026-06-23 at 9 43 13 PM" src="https://github.com/user-attachments/assets/ab770dcb-0c76-4716-ba8d-fa4b7d37b53f" />
+
 
 **What this proves to an employer:** I understand offboarding as a security-critical process, not just an admin task. Disabling, relocating, and logging the account, then confirming the change synced to the cloud, is the kind of audit trail a real compliance or security team would expect to see.
 
